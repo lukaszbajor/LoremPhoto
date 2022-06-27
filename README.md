@@ -8,7 +8,7 @@ This website is website of comapny which deals with filmmaking and photography. 
 
 Project is created with:
 
-- HTML
+- HTML + BEM
 - CSS + SASS(SCSS)
 - JavaScript + slick.js
 
