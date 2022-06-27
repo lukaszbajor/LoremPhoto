@@ -1,0 +1,17 @@
+.footer {
+  padding: 2rem;
+  background-color: #000;
+  &__author {
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (min-width: 567px) {
+  .footer {
+    &__author {
+      font-size: 2em;
+    }
+  }
+}

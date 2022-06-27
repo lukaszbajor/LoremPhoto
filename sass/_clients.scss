@@ -1,0 +1,123 @@
+.clients {
+  padding: 2rem;
+  background-color: rgb(59, 57, 57);
+  &__box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-item {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 100%;
+      text-align: center;
+      color: white;
+      i {
+        font-size: 10em;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: 2em;
+      }
+    }
+  }
+}
+@media (min-width: 567px) {
+  .clients {
+    &__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      &-item {
+        margin-top: unset;
+        flex-basis: 50%;
+        i {
+          margin-top: 2rem;
+          font-size: 6em;
+        }
+        p {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .clients {
+    &__box {
+      &-item {
+        flex-basis: 30%;
+
+        i {
+          margin-top: 1rem;
+          font-size: 6em;
+        }
+        p {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .clients {
+    &__box {
+      &-item {
+        animation: bounceIn;
+        animation-duration: 5.5s;
+        animation-iteration-count: infinite;
+        flex-basis: 10%;
+        &:nth-of-type(1) {
+          animation-delay: 1s;
+        }
+        &:nth-of-type(2) {
+          animation-delay: 1.5s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: 1.8s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: 2s;
+        }
+        &:nth-of-type(5) {
+          animation-delay: 1.2s;
+        }
+        &:nth-of-type(6) {
+          animation-delay: 2.5s;
+        }
+        i {
+          font-size: 4em;
+        }
+        p {
+          margin-top: 1rem;
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+  }
+  5% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}

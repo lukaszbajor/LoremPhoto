@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+body {
+  position: relative;
+}
+@import "variables";
+@import "components";
+@import "mixins";
+@import "header";
+@import "nav";
+@import "main";
+@import "about";
+@import "offer";
+@import "realizations";
+@import "clients";
+@import "contact";
+@import "footer";

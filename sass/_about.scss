@@ -1,0 +1,112 @@
+.about {
+  @include section;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  &__text-box {
+    margin: 0 auto;
+  }
+
+  &__info {
+    @include info;
+    &::after {
+      @include infoAfter;
+    }
+  }
+  &__text {
+    margin-top: 2rem;
+    font-size: 1.5em;
+    text-align: justify;
+  }
+  &__teams {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    &-item {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      height: 300px !important;
+      display: flex !important;
+      justify-content: space-between;
+      align-items: flex-end;
+      background-size: cover;
+      background-position: center;
+      flex-basis: 40%;
+      font-size: 1.8em;
+      color: white;
+      &--0 {
+        background-image: url("../img/team/Paul.jpg");
+
+      }
+      &--1 {
+        background-image: url("../img/team/Mike.jpg");
+      }
+      &--2 {
+        background-image: url("../img/team/Kate.jpg");
+        .box {
+          color: #000;
+        }
+      }
+      &--3 {
+        background-image: url("../img/team/Sonia.jpg");
+      }
+      &--4 {
+        background-image: url("../img/team/Chris.jpg");
+      }
+      &--5 {
+        background-image: url("../img/team/Molly.jpg");
+      }
+    }
+
+    .socials {
+      margin: 0.3rem;
+      font-size: 2em;
+      i {
+        cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .about {
+      &__info {
+        font-size: 3em;
+      }
+      &__text {
+        padding: 3rem 9rem;
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .about {
+      &__info {
+        font-size: 3.2em;
+      }
+      &__text {
+        padding: 3rem 12rem;
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .about {
+      &__info {
+        font-size: 4em;
+      }
+      &__text {
+        padding: 3rem 16rem;
+        font-size: 2em;
+      }
+    }
+  }
+}
